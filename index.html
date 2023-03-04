@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;1,200;1,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--  header-->
+    <div class="header">
+      <h2>Blogging Website</h2>
+      <button id="create-blog-btn">Create New Post</button>
+    </div>
+
+    <!-- modal-->
+    <div id="modal">
+      <div id="modal-content">
+        <span id="close-btn">X</span>
+        <form>
+          <h2 class="xyz">Create a Post</h2>
+          <input
+            type="text"
+            id="blog-title"
+            name="blog-title"
+            placeholder="Enter Your heading...."
+          /><br />
+          <textarea
+            id="blog-description"
+            name="blog-description"
+            placeholder="Enter Your Blog Post...."
+          ></textarea
+          ><br />
+          <div class="stylebtn">
+            <button id="save-btn">Publish Post</button>
+            <button id="cancel-btn">Cancel Post</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    
+    <!-- blog posts-->
+    <div id="blog-posts"></div>
+    <script src="./script.js"></script>
+  </body>
+</html>
